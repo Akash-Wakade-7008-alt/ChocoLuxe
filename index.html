@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChocoLuxe — Artisan Chocolate</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="logo">Choco<span>Luxe</span></a>
+      <ul>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#newsletter">Contact</a></li>
+      </ul>
+      <button class="nav-cart" onclick="toggleCart()">
+        🛒 Cart
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <div class="hero-tag">✦ Artisan Chocolate Since 1998</div>
+        <h1 class="hero-title">Where Cocoa<br />Becomes <em>Art</em></h1>
+        <p class="hero-desc">
+          Single-origin chocolates handcrafted from the world's finest cacao
+          harvests. Every bar tells a story of terroir, tradition, and obsessive
+          care.
+        </p>
+        <div class="hero-cta">
+          <a href="#collection" class="btn-primary">Shop Collection</a>
+          <a href="#story" class="btn-ghost">Our Process →</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-visual">
+          <div class="choco-blob">
+            <div class="choco-inner">
+              <div class="choco-shine"></div>
+            </div>
+          </div>
+        </div>
+        <div class="float-label fl-1">
+          <div class="fl-num">72%</div>
+          <div class="fl-txt">Dark Cacao</div>
+        </div>
+        <div class="float-label fl-2">
+          <div class="fl-num">12+</div>
+          <div class="fl-txt">Origins</div>
+        </div>
+        <div class="float-label fl-3">
+          <div class="fl-num">★4.9</div>
+          <div class="fl-txt">Rated</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-strip">
+      <div class="marquee-track" id="marquee">
+        <span>Single Origin</span><span class="dot">◆</span>
+        <span>Bean to Bar</span><span class="dot">◆</span>
+        <span>Ecuador Cacao</span><span class="dot">◆</span>
+        <span>Free Shipping Over ₹999</span><span class="dot">◆</span>
+        <span>Handcrafted</span><span class="dot">◆</span>
+        <span>Gift Wrapping Available</span><span class="dot">◆</span>
+        <span>No Artificial Flavors</span><span class="dot">◆</span>
+        <span>Sustainably Sourced</span><span class="dot">◆</span>
+        <span>Single Origin</span><span class="dot">◆</span>
+        <span>Bean to Bar</span><span class="dot">◆</span>
+        <span>Ecuador Cacao</span><span class="dot">◆</span>
+        <span>Free Shipping Over ₹999</span><span class="dot">◆</span>
+        <span>Handcrafted</span><span class="dot">◆</span>
+        <span>Gift Wrapping Available</span><span class="dot">◆</span>
+        <span>No Artificial Flavors</span><span class="dot">◆</span>
+        <span>Sustainably Sourced</span><span class="dot">◆</span>
+      </div>
+    </div>
+
+    <!-- COLLECTION -->
+    <section id="collection">
+      <div class="products-header reveal">
+        <div>
+          <div class="section-label">✦ The Collection</div>
+          <h2 class="section-title">Crafted for Connoisseurs</h2>
+        </div>
+        <div class="filter-tabs">
+          <button
+            class="filter-tab active"
+            onclick="filterProducts('all', this)"
+          >
+            All
+          </button>
+          <button class="filter-tab" onclick="filterProducts('dark', this)">
+            Dark
+          </button>
+          <button class="filter-tab" onclick="filterProducts('milk', this)">
+            Milk
+          </button>
+          <button class="filter-tab" onclick="filterProducts('white', this)">
+            White
+          </button>
+          <button class="filter-tab" onclick="filterProducts('gift', this)">
+            Gifts
+          </button>
+        </div>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <!-- STORY -->
+    <section id="story">
+      <div class="story-visual reveal">
+        <div class="story-box story-box-1">🍫</div>
+        <div class="story-box story-box-2">🌿</div>
+        <div class="story-box story-box-3">
+          <div class="num">25+</div>
+          <div class="lbl">Years of Craft</div>
+        </div>
+      </div>
+      <div class="story-content reveal">
+        <div class="section-label">✦ Our Story</div>
+        <h2 class="section-title">A Legacy of<br />Obsessive Craft</h2>
+        <p class="section-subtitle">
+          Born in a small atelier in Ooty, ChocoLuxe has spent over two decades
+          chasing the perfect chocolate. We travel to the source — from
+          Venezuelan valleys to Kerala estates — selecting only cacao that meets
+          our uncompromising standards.
+        </p>
+        <div class="story-features">
+          <div class="story-feature">
+            <h4>Bean to Bar</h4>
+            <p>Full control from raw cacao to finished bar.</p>
+          </div>
+          <div class="story-feature">
+            <h4>Small Batch</h4>
+            <p>Never more than 200 bars per batch.</p>
+          </div>
+          <div class="story-feature">
+            <h4>Fair Trade</h4>
+            <p>Premium paid directly to farmers.</p>
+          </div>
+          <div class="story-feature">
+            <h4>No Shortcuts</h4>
+            <p>72-hour conching. Always.</p>
+          </div>
+        </div>
+        <br /><br />
+        <a href="#collection" class="btn-primary">Explore the Collection</a>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews">
+      <div class="section-label reveal">✦ Testimonials</div>
+      <h2 class="section-title reveal">What Our Chocolatiers Say</h2>
+      <p class="section-subtitle reveal">
+        Thousands of happy customers across India.
+      </p>
+      <div class="reviews-grid" id="reviewsGrid"></div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter">
+      <div class="section-label">✦ Stay in Touch</div>
+      <h2 class="section-title">Join the Inner Circle</h2>
+      <p class="section-subtitle">
+        Be first to know about new releases, limited editions, and exclusive
+        offers.
+      </p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Your email address" id="emailInput" />
+        <button onclick="subscribeNewsletter()">Subscribe</button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">Choco<span>Luxe</span></a>
+          <p>
+            Handcrafted artisan chocolate from bean to bar. Made with love in
+            India, for the world.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Shop</h5>
+          <ul>
+            <li><a href="#collection">Dark Chocolate</a></li>
+            <li><a href="#collection">Milk Chocolate</a></li>
+            <li><a href="#collection">White Chocolate</a></li>
+            <li><a href="#collection">Gift Sets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 ChocoLuxe. All rights reserved. Made with 🍫 in India.</p>
+        <p>Privacy Policy · Terms of Service</p>
+      </div>
+    </footer>
+
+    <!-- CART DRAWER -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+    <div class="cart-drawer" id="cartDrawer">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" onclick="toggleCart()">✕</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="cart-empty">
+          <span class="empty-icon">🍫</span>
+          Your cart is empty.<br />Discover our collection.
+        </div>
+      </div>
+      <div class="cart-footer" id="cartFooter" style="display: none">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cartTotal">₹0</strong>
+        </div>
+        <button class="checkout-btn" onclick="checkout()">
+          Proceed to Checkout →
+        </button>
+      </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">
+      <span class="toast-icon">✓</span>
+      <span id="toastMsg">Added to cart</span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

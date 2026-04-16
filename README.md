@@ -6,8 +6,8 @@
 </p>
 
 <p align="center">
-  <a href="https://your-live-link.vercel.app">🌐 Live Demo</a> •
-  <a href="https://github.com/your-username/chocoluxe">📂 Repository</a>
+  <a href="https://akash-wakade-7008-alt.github.io/ChocoLuxe/">🌐 Live Demo</a> •
+  <a href="https://github.com/Akash-Wakade-7008-alt">📂 Repository</a>
 </p>
 
 ---

@@ -22,27 +22,24 @@
 ## 🖼️ Preview
 
 <p align="center">
-<p>🏠 Hero Section</p>
+<h2>🏠 Hero Section</h2>
   <img src="./images/Preview-1.png" width="800"/><br>
-</p>
+</p><br>
 
 <p align="center">
-  <p>🍫 Product Collection</p>
+  <h2>🍫 Product Collection</h2>
   <img src="./images/Preview-2.png" width="800"/><br>
-
-</p>
+</p><br>
 
 <p align="center">
-  <p>📖 Our Story</p>
+  <h2>📖 Our Story</h2>
   <img src="./images/Preview-3.png" width="800"/><br>
-
-</p>
+</p><br>
 
 <p align="center">
-  <p>⭐ Testimonials</p>
+  <h2>⭐ Testimonials</h2>
   <img src="./images/Preview-4.png" width="800"/><br>
-
-</p>
+</p><br>
 
 ---
 
